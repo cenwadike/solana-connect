@@ -10,6 +10,7 @@
 import { transferDbaToDestinationAddress } from '../../lib/createTransfer'
 
 export default {
+
     data() {
         return {
             amount: null
