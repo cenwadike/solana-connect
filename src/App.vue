@@ -7,12 +7,11 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { initWallet } from 'solana-wallets-vue';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 
-const walletOptions = {
-  wallets: [
+const walletOptions =
+  [
     new PhantomWalletAdapter({ network: WalletAdapterNetwork.Mainnet }),
     new SolflareWalletAdapter({ network: WalletAdapterNetwork.Mainnet }),
-  ],
-}
+  ]
 
 initWallet({
   walletOptions,
