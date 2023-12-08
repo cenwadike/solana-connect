@@ -1,24 +1,18 @@
 <script setup>
-import TransferDbaToken from './components/TransferDbaToken.vue';
+import TransferDbaToken from './components/TransferToken.vue';
 import ConnectWallet from './components/ConnectWallet.vue'
 
 import "solana-wallets-vue/styles.css"
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { initWallet } from 'solana-wallets-vue';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 
-const walletOptions =
-  [
+const walletOptions = {
+  wallets: [
     new PhantomWalletAdapter({ network: WalletAdapterNetwork.Mainnet }),
     new SolflareWalletAdapter({ network: WalletAdapterNetwork.Mainnet }),
-  ]
-
-initWallet({
-  walletOptions,
-  autoConnect: true
-})
-
-walletOptions
+  ],
+  autoConnect: false
+}
 
 </script>
 

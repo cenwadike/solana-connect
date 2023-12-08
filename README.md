@@ -1,6 +1,6 @@
 # solana-ui
 
-This template should help get you started developing with Vue 3 in Vite.
+This minimal Vue.js UI interaction of Solana blockchain using solana-wallet-adapter and spl-token library.
 
 ## Recommended IDE Setup
 

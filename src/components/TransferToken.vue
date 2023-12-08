@@ -7,7 +7,7 @@
 </template>
   
 <script>
-import { transferDbaToDestinationAddress } from '../../lib/createTransfer'
+import { transferSplToken } from '../../lib/createTransfer'
 
 export default {
 
@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         submit() {
-            transferDbaToDestinationAddress(this.amount)
+            transferSplToken(this.amount)
         }
     }
 }
