@@ -1,4 +1,4 @@
-# solana-ui
+# solana-connect
 
 This minimal Vue.js UI interaction of Solana blockchain using solana-wallet-adapter and spl-token library.
 
